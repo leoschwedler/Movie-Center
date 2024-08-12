@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.SearchFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Campo de texto para inserir o termo de busca -->
+        <EditText
+            android:id="@+id/editTextSearchMovies"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="@color/white"
+            android:hint="Search for movies"
+            android:layout_marginTop="32dp"
+            android:textColorHint="@color/white"
+            android:inputType="text"
+            android:padding="12dp"
+            android:background="@drawable/dark_blue_bg"
+            android:drawableEnd="@drawable/search"
+            android:drawablePadding="8dp"
+            android:textSize="16sp"/>
+
+        <!-- RecyclerView para exibir os resultados da pesquisa -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewSearchResults"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="16dp"/>
+
+    </LinearLayout>
+
+</FrameLayout>
