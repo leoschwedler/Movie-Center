@@ -29,7 +29,7 @@ class HomeFragment : Fragment() {
     private lateinit var popularMoviesAdapter: MoviesAdapter
     private lateinit var upcomingMoviesAdapter: MoviesAdapter
     private lateinit var binding: FragmentHomeBinding
-    private var pageNow = 1
+    private var pageNow = 2
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
